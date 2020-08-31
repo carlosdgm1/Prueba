@@ -1,0 +1,421 @@
+
+
+:root{
+    --rojo:#E72424 ;
+    --azul:#246EE7 ;
+    --blanco:#FFFFFF ;
+    --azulf:#074BBB ;
+    --negro:#000000 ;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background:#FFFFFF ;
+    overflow-x: hidden;
+    font-family: 'Arimo', sans-serif;
+
+}
+
+/**Menu de navegacion**/
+
+#header{
+    position: relative;
+    width: 100%;
+}
+.menu{
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background: var(--blanco);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+}
+.menu .logo-box{
+    margin-left: 20px;
+}
+.menu .list-container{
+    margin-right: 20px;
+}
+.menu .list-container .lists{
+    display: flex;
+}
+.menu .list-container .lists li{
+    list-style: none;
+}
+.menu .list-container .lists li a{
+   text-decoration: none;
+    margin: 0px 10px;
+    padding:8px;
+    color: var(--negro);
+    border-radius: 24px;
+    transition: 0.3s;
+    font-size: 16px;
+
+}
+.menu .list-container .lists li a.activo{
+    background: var(--rojo);
+    color: var(--blanco);
+}
+.menu .list-container .lists li a:hover{
+    background: var(--rojo);
+    color: var(--blanco);
+}
+.btn-menu > .fa-bars{
+    display: none;
+}
+/**Menu de navegacion**/
+
+/**Imagen Header**/
+.img-header{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/header.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.img-header .welcome{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(47, 43, 241, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.img-header .welcome h1{
+    font-size: 80px;
+    color: var(--blanco);
+    font-weight: 200;
+}
+.img-header .welcome hr{
+    width: 700px;
+    height: 5px;
+    background: var(--azulf);
+    border: var(--azulf);
+    margin-top: 5px;
+}
+.img-header .welcome p{
+    font-size: 30px;
+    color: var(--blanco);
+    margin-top: 20px;
+}
+.img-header .welcome > button{
+    width: 170px;
+    height: 50px;
+    background: var(--rojo);
+    border-radius: 24px;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    color: var(--blanco);
+    text-align: center;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.img-header .welcome > button:hover{
+    background: var(--azul);
+}
+/**Imagen Header**/
+
+/**Acerca de Nosotros**/
+.acerca-de {
+    width: 100%;
+    margin-top: 120px;
+}
+.acerca-de .info {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.acerca-de .info hr{
+    margin-top: 15px;
+    background: var(--azulf);
+    border: var(--azulf);
+    width: 1100px;
+    height: 1px;
+}
+.acerca-de .info h1{
+   margin-top: 15px;
+   font-size: 40px;
+   color: var(--negro);
+   text-align: center;
+   margin-bottom: 20px;
+}
+.acerca-de .info p{
+   font-size: 20px;
+   color: var(--negro);
+   text-align: justify;
+   margin-bottom: 20px;
+}
+.acerca-de .info .about-galeria{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px;
+}
+
+.acerca-de .info .acerca-mas button:hover{
+    background: var(--azul);
+}
+/**Acerca de Nosotros**/
+
+/**Nuestros productos**/
+.productos{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../img/fondo\ productos.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: covers;
+    margin-top: 100px;
+}
+.productos .deg-background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(26, 25, 68, 0.6);
+}
+.productos .ejeZ-producto{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.productos .container-proyect .project-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    padding-bottom: 100px;
+}
+
+.productos .container-proyect{
+    width: 90%;
+    margin: auto;
+    padding-top: 100px;
+}
+.productos .container-proyect .project-title {
+    border: 2px solid #FFFFFF;
+    padding: 10px;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}  
+.productos .container-proyect .project-title h2{
+    font-size: 40px;
+    color: #FFFFFF;
+    background: normal;
+}
+.productos .container-proyect .project-title hr{
+    background: var(--azulf);
+    width: 50%;
+    margin: 10px auto;
+}
+.productos .container-proyect .project-title p{
+    font-size: 20px;
+   color: var(--blanco);
+   text-align: justify;
+   margin-bottom: 20px;
+}
+.productos .container-proyect .project-img img{
+    width: calc(22% - 10px);
+    margin:10px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;;
+}
+
+/**Nuestros productos**/
+
+/**Cierre de pagina**/
+.cierre-de {
+    width: 100%;
+    margin-top: 100px;
+}
+.cierre-de .cierre {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.cierre-de .cierre hr{
+    margin-top: 15px;
+    background: var(--azulf);
+    border: var(--azulf);
+    width: 1100px;
+    height: 1px;
+}
+.cierre-de .cierre h1{
+   margin-top: 15px;
+   font-size: 40px;
+   color: var(--negro);
+   text-align: center;
+   margin-bottom: 20px;
+}
+.cierre-de .cierre p{
+   font-size: 20px;
+   color: var(--negro);
+   text-align: justify;
+   margin-bottom: 20px;
+}
+/**Cierre de pagina**/
+
+/**Contacto**/
+.footer{
+    position: relative;
+    margin-top: 100px;
+    width: 100%;
+    height: 100%;
+    background: url(../img/contacto.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.footer .deg-footer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(26, 25, 68, 0.6);
+}
+.footer .ejeZ-footer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.footer .footer-content{
+    width: 90%;
+    padding-top: 100px;
+    margin: auto;
+    padding-bottom: 100px;
+}
+.footer .footer-content .footer-titulo{
+    width: 50%;
+    margin: auto;
+    border: 2px solid #FFFFFF;
+    padding: 15px;
+}
+.footer .footer-content .footer-titulo h2{
+    width: 50%;
+    margin: 10px auto;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 50px;
+    font-weight: normal;
+      
+}
+.footer .footer-content .footer-titulo hr{
+    width: 80%;
+    margin: auto;
+}
+.footer .footer-content .formulario-contacto{
+    width: 60%;
+    background: #FFFFFF;
+    border-radius: 24px;
+    border: 2px solid var(--rojo);
+    margin: 50px auto;
+    padding: 30px;
+}
+.footer .footer-content .formulario-contacto #formulario{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.footer .footer-content .formulario-contacto #formulario label{
+    text-align: center;
+    color: var(--negro);
+    font-size: 20px;
+    margin: 30px;
+}
+.footer .footer-content .formulario-contacto #formulario input{
+    width: 90%;
+    height: 40px;
+    margin: auto;
+    border:  2px solid var(--rojo);
+    border-radius: 24px;
+    outline: none;
+    text-align: center;
+    font-size: 17px;
+    color: var(--negro);
+
+}
+.footer .footer-content .formulario-contacto #formulario textarea{
+    width: 90%;
+    height: 200px;
+    margin: auto;
+    border:  2px solid var(--rojo);
+    border-radius: 24px;
+    outline: none;
+    font-size: 17px;
+    color: var(--negro);
+    padding: 20px;
+}
+.footer .footer-content .formulario-contacto #formulario .enviar{
+    width: 100%;
+    display: flex;
+    margin: 40px auto;
+    justify-content: center;
+
+}
+.footer .footer-content .formulario-contacto #formulario .enviar button{
+    width: 150px;
+    height: 50px;
+    background: var(--rojo);
+    border-radius: 24px;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    color: var(--blanco);
+    text-align: center;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+.footer .footer-content .formulario-contacto #formulario .enviar button:hover{
+    background: var(--azul);
+}
+.footer .footer-content .footer-text{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: rgba(34, 33, 33, 0.8);
+    border-top: 5px solid var(--azulf);
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.footer .footer-content .footer-text p{
+    color: var(--blanco);
+    font-size: 20   px;
+}
+/**Contacto**/
+
